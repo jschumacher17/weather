@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Hello jQuery, Movie Edition</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/f9001c39ac.js"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-//jQuery Weather!
+// jQuery Weather!
 
 // Using your newfound knowledge of jQuery, re-create our weather
 // application. It should:
@@ -24,13 +10,11 @@
 // HINTS
 
 // Each day of the forecast should use HTML markup similar to:
-
-<div class="col">
-  <p><a id="do-something" class="btn btn-success" href="">Get the Weather!</a></p>
-  <h3><i class="fa fa-sun-o"></i></h3>
-    <h4>89|55</h4>
-    <h5>Clear throughout the day.</h5>
-</div>
+// <div class="col">
+//   <h3><i class="fa fa-sun-o"></i></h3>
+//   <h4>89|55</h4>
+//   <h5>Clear throughout the day.</h5>
+// </div>
 
 // The provided icon() function takes a Dark Sky point object and
 // converts it into an icon, e.g.
