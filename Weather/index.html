@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   <script src="https://use.fontawesome.com/f9001c39ac.js"></script>
-  <script src="main.js"></script>
+  <script src="weather.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,11 +26,62 @@
 // Each day of the forecast should use HTML markup similar to:
 
 <div class="col">
-  <p><a id="do-something" class="btn btn-success" href="">Get the Weather!</a></p>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mt-3">
+          <input type="text" id="location-name" class="form-control" placeholder="Where to?">
+          <button id="get-the-weather" class="btn btn-primary mt-1">Get the weather!</button>
+        </div>
+      </div>
+      <div class="row current">
+        <div class="col-sm-12">
+          <h1 id="current-conditions-icon"></h1>
+          <h1 id="location"></h1>
+          <h2 id="current-conditions-text"></h2>
+        </div>
+      </div>
+      <div class="row forecast">
+        <div class="col-sm-2">
+          <h3 id="forecast1-icon"></h3>
+          <h4 id="forecast1-temp"></h4>
+          <h5 id="forecast1-text"></h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 id="forecast2-icon"></h3>
+          <h4 id="forecast2-temp"></h4>
+          <h5 id="forecast2-text"></h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 id="forecast3-icon"></h3>
+          <h4 id="forecast3-temp"></h4>
+          <h5 id="forecast3-text"></h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 id="forecast4-icon"></h3>
+          <h4 id="forecast4-temp"></h4>
+          <h5 id="forecast4-text"></h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 id="forecast5-icon"></h3>
+          <h4 id="forecast5-temp"></h4>
+          <h5 id="forecast5-text"></h5>
+        </div>
+        <div class="col-sm-2">
+          <h3 id="forecast6-icon"></h3>
+          <h4 id="forecast6-temp"></h4>
+          <h5 id="forecast6-text"></h5>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+
   <h3><i class="fa fa-sun-o"></i></h3>
     <h4>89|55</h4>
     <h5>Clear throughout the day.</h5>
 </div>
+
 
 // The provided icon() function takes a Dark Sky point object and
 // converts it into an icon, e.g.

@@ -31,11 +31,18 @@ let handleWeatherResponse = function(response) {
   // the response object in the browser console
   console.log(response)
   window.response = response
+//Not part of my code
 
   // **** your code starts here - don't modify anything else. you will be sad.
+  document.getElementById("current-conditions-text").innerHTML = response.currently.temperature;
+  document.getElementById("current-conditions-icon").innerHTML = icon(response.currently);
 
-
-  // *** your code ends here - no, really.
+for(let i=1; i<6; i++) {
+  document.getElementById("forecast" + i + "-icon").innerHTML = icon(response.daily.data[i]);
+  document.getElementById("forecast" + i + "-temp").innerHTML = response.daily.data[i].tempatureHigh;
+  document.getElementbyId("forecast" + i + "-text").innerHTML = response.daily.data[i].summary;
+}
+// *** your code ends here - no, really.
 };
 
 // leave this alone; does the event handling and ajax
